@@ -38,7 +38,7 @@ export default {
       this.Email = "";
       this.Password = "";
       Accounts.createUser(data); //creates the user and insert the data into db(locally) and saves it.
-      this.$router.push("/user"); //reirect to next page
+      this.$router.push("/user"); //redirect to next page
     },
   },
 };
