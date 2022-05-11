@@ -5,7 +5,6 @@
 
       <label for="">Username/Email</label><br />
       <input type="text" id="" v-model="email" required /><br /><br />
-      <!-- <p>{{email}}</p>   value track garera rakhi ranxa -->
 
       <label for="">Password</label><br />
       <input type="password" v-model="password" id="" required />
@@ -44,6 +43,8 @@ export default {
       Meteor.loginWithPassword(this.email, this.password, () => {
         if (Meteor.user()) {
           this.$router.push("/user");
+        } else {
+          alert("Incorrect username or password ");
         }
       });
     },
@@ -62,9 +63,6 @@ export default {
 }
 
 .Login .Login-content {
-  /* display: flex;
-        flex-direction: column;
-        align-items: center; */
   color: black;
   width: 400px;
   height: 400px;

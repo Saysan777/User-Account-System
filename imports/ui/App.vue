@@ -13,26 +13,11 @@ import Nav from "../../client/components/Navbar/Nav.vue";
 import Header from "../../client/components/Header/Header.vue";
 
 export default {
-  data() {
-    return {
-      isPlaying: false,
-      isLogin: false,
-      isRegister: false,
-    };
-  },
   components: {
     Nav,
     Header,
   },
-  methods: {
-    showLogin() {
-      this.isLogin = !this.isLogin;
-      this.isRegister = false;
-    },
-    showRegister() {
-      this.isRegister = !this.isRegister;
-    },
-  },
+  methods: {},
 };
 </script>
 

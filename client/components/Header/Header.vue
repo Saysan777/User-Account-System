@@ -57,6 +57,7 @@ export default {
       this.$router.push("/changePass");
     },
     log() {
+      this.logOut();
       this.$router.push("/login");
     },
   },
