@@ -1,7 +1,7 @@
 <template>
   <div class="Error">
     <div class="Error-content">
-      Sorry , we were unable to locate the page
+      Sorry , we were unable to locate the page.
       <i class="fa-solid fa-face-pensive"></i>
       <a
         href=""
